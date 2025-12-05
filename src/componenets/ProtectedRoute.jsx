@@ -5,6 +5,7 @@ function ProtectedRoute({ children }) {
 
   const token = localStorage.getItem("bilol");
 
+
   if (!token) {
     return <Navigate replace to={"/"} />;
   }

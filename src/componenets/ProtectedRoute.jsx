@@ -9,7 +9,6 @@ function ProtectedRoute({ children }) {
   if (!token) {
     return <Navigate replace to={"/"} />;
   }
-
   return children;
 }
 
